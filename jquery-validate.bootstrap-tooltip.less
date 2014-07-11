@@ -1,0 +1,22 @@
+/* Get red tooltips using bootstrap theme error color */
+.has-error ,
+.has-error + .tooltip
+{
+	// Flèches
+	.left, &.left {.tooltip-arrow { border-left-color:@brand-danger !important; } }
+	.right, &.right {.tooltip-arrow { border-right-color:@brand-danger !important; } }
+	.top, &.top {.tooltip-arrow { border-top-color:@brand-danger !important; } }
+	.bottom, &.bottom {.tooltip-arrow { border-bottom-color:@brand-danger !important; } }
+
+	.in	{ opacity:1; }
+	.tooltip-inner { background-color:@brand-danger; }
+
+	button, .btn-group ul
+    {
+		label
+        {
+        	color:@gray-darker;
+        }
+		border-color: @brand-danger;
+    }
+}
